@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #552583; /* Purple */
+            --secondary-color: #FDB927; /* Gold */
+            --background-color: #000000; /* Black */
+            --text-color: #FFFFFF; /* White */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--background-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .project {
+            flex: 0 0 45%;
+            margin: 10px;
+            background-color: var(--primary-color);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project {
+                flex: 0 0 100%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <footer>
+        &copy; 2024 Your Portfolio. All rights reserved.
+    </footer>
+
+</body>
+</html>
